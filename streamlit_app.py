@@ -2,14 +2,14 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("💬 Chatbot")
+st.title("Chatbot")
 st.write(
-    "Đây là trợ lý của nguyễn văn Nhuần Từ PYAN")
+    "Đây là trợ lý của nguyễn văn Nhuần Từ PYAN Anh lập trình")
 
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
 # via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = "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"
+openai_api_key = "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"
 
 if not openai_api_key:
     st.info("Please add your OpenAI API key to continue.", icon="🗝️")
